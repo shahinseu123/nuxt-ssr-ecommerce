@@ -1,4 +1,5 @@
 <template>
+  <NuxtLink to="/product/product-applemacbook/123">
     <div class="product-card w-full rounded overflow-hidden bg-white shadow">
       <div class="product-image w-full object-cover">
           <img src="https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?cs=srgb&dl=pexels-eprism-studio-335257.jpg&fm=jpg" alt="product name" />
@@ -32,6 +33,7 @@
         </div>
       </div>
     </div>
+  </NuxtLink>
 </template>
 <script setup>
 </script>

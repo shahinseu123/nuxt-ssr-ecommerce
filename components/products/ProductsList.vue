@@ -1,10 +1,23 @@
 <template>
-    <div class="main-container product-list width-full  shadow-sm bg-white my-5">
-       <div class="header-top h-14 flex items-center p-4">
-         <div class="header-text text-2xl font-semibold text-gray-700">
-            Just For You
-         </div>
-       </div>
+    <div class="main-container product-list width-full  shadow-sm bg-white">
+      <div class="flex justify-between items-center">
+        <div class="header-top h-14 flex items-center p-4 gap-10">
+          <div class="header-text text-2xl font-semibold text-gray-700">
+             <div>Flash Sale</div> 
+             <div class="text-xs text-blue-700 font-normal border border-blue-700 flex justify-center items-center">Up to 65% off</div> 
+          </div>
+          <div>
+             <CountDown />
+          </div>
+        </div>
+        <div>
+          <NuxtLink to="/product/flash-sale">
+            <div class="cursor-pointer text-sm font-normal text-blue-700 border border-blue-700 py-1 px-4 mr-3 ">
+              Shop More
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
        <UDivider icon="i-heroicons-rocket-launch" />
        
        <div class="list-body p-2">
@@ -12,7 +25,6 @@
             <ClientOnly>
               <swiper
                 :modules="modules"
-                
                 :space-between="10"
                 :breakpoints="breakpoints"
                 navigation
@@ -27,6 +39,7 @@
     </div>
 </template>
 <script setup lang="ts">
+import CountDown from '../others/CountDown.vue';
 import ProductCard from './ProductCard.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -55,3 +68,8 @@ const breakpoints = {
                     }
 
 </script>
+<style >
+.swiper-button-disabled{
+  display: none;
+}
+</style>

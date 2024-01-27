@@ -3,7 +3,9 @@
         <div class=" first-nav border-b border-white h-20">
           <div class="main-container nav--items h-full flex justify-between items-center">
             <div class="nav--icon w-32">
-               <img class="w-32" src="/img/EM-LOGO-1.png" alt="">
+                <NuxtLink to="/">
+                    <img class="w-32" src="/img/EM-LOGO-1.png" alt="">
+                </NuxtLink>
             </div>
             <div class="nav--items-container">
                <ul class="flex justify-between gap-5">
