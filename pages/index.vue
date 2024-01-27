@@ -3,9 +3,9 @@
        <div class="my-3">
            <CategoryList />
        </div> 
-       <div class="my-3">
+       <!-- <div class="my-3">
            <BrandList />
-       </div> 
+       </div>  -->
        <div class="my-3">
            <ProductsList />
        </div>

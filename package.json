@@ -21,7 +21,9 @@
     "@nuxt/ui": "^2.12.0",
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/nuxt": "^10.7.2",
+    "@websitebeaver/vue-magnifier": "^1.1.0",
     "nuxt-swiper": "^1.2.2",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "vue-product-slider": "^0.2.0"
   }
 }
